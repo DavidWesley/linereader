@@ -39,7 +39,7 @@
     "lint:fix": "eslint . --ext .js,.ts --fix",
     "lint:all": "eslint src --ext .js,.ts --max-warnings=0 --fix",
     "prepare": "husky install",
-    "prepublish": "tsup src"
+    "prepublish": "tsup"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
