@@ -1,8 +1,7 @@
 {
   "name": "@dwesley/linereader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple `Readliner` class, similar to Java's `readline()` method, written in typescript (for Node) to read files line-by-line asynchronously and quickly.",
-  "private": "true",
   "author": {
     "name": "David Wesley",
     "email": "contato.dwesley@outlook.com",
@@ -30,6 +29,7 @@
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
+  "files": ["dist"],
   "engines": {
     "node": ">= 18"
   },
