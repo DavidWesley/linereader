@@ -1,33 +1,60 @@
 {
-  "name": "config-template",
+  "name": "@dwesley/linereader",
   "version": "0.0.1",
-  "description": "Inicializar um repositório com todas as configurações necessárias",
+  "description": "A simple `Readliner` class, similar to Java's `readline()` method, written in typescript (for Node) to read files line-by-line asynchronously and quickly.",
   "private": "true",
-  "type": "module",
-  "scripts": {
-    "test": "",
-    "lint": "eslint",
-    "lint:fix": "eslint . --ext .js,.ts --fix",
-    "lint:all": "eslint src --ext .js,.ts --max-warnings=0 --fix",
-    "prepare": "husky install"
-  },
   "author": {
     "name": "David Wesley",
     "email": "contato.dwesley@outlook.com",
     "url": "https://github.com/DavidWesley"
   },
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidWesley/linereader.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "line",
+    "readline",
+    "readliner",
+    "linereader",
+    "line-reader",
+    "line-by-line",
+    "asynchronous",
+    "asynchronously",
+    "stream",
+    "EOF"
+  ],
+  "readme": "./README.md",
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "engines": {
+    "node": ">= 18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "lint:all": "eslint src --ext .js,.ts --max-warnings=0 --fix",
+    "prepare": "husky install",
+    "prepublish": "tsup src"
+  },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
-    "@tsconfig/strictest": "^2.0.1",
-    "@typescript-eslint/eslint-plugin": "^6.2.0",
-    "@typescript-eslint/parser": "^6.2.0",
+    "@tsconfig/strictest": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
     "cross-env": "^7.0.3",
-    "eslint": "^8.46.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.2.3",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
-  }
+    "eslint": "^8.51.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "tsup": "^7.2.0",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  },
+  "license": "MIT"
 }
