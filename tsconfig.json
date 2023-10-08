@@ -2,21 +2,32 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
-    "allowSyntheticDefaultImports": false,
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
-    "module": "ESNext",
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "strictBindCallApply": true,
+
+    "lib": [ "ESNext" ],
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+
     "allowJs": false,
     "checkJs": false,
-    "target": "ESNext",
-    "moduleResolution": "NodeNext"
+    "removeComments": false,
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [ "src/" ],
+      "@dwesley/linereader": [ "src/main.ts" ]
+    },
+    "outDir": "dist"
   },
-  "include": [
-    "src/"
-  ],
-  "exclude": [
-    "node_modules/*"
-  ]
+  "include": [ "src" ],
+  "exclude": [ "node_modules/*", "dist" ]
 }
