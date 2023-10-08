@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DavidWesley/linereader.git"
+    "url": "git+https://github.com/DavidWesley/linereader.git"
   },
   "categories": [
     "Other"
@@ -27,7 +27,6 @@
     "stream",
     "EOF"
   ],
-  "readme": "./README.md",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -56,5 +55,9 @@
     "tsx": "^3.13.0",
     "typescript": "^5.2.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidWesley/linereader/issues"
+  },
+  "homepage": "https://github.com/DavidWesley/linereader#readme"
 }
